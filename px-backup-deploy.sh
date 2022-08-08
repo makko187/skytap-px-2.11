@@ -9,7 +9,11 @@ sleep 5
 
 echo " Install PX -Backup"
 
-helm install px-central portworx/px-central --namespace central --set persistentStorage.enabled=true,persistentStorage.storageClassName="portworx-sc",pxbackup.enabled=true
+helm install px-central portworx/px-central --namespace central --create-namespace --version 2.2.1 --set persistentStorage.enabled=true,persistentStorage.storageClassName="portworx-sc",pxbackup.enabled=true
+
+#old
+#helm install px-central portworx/px-central --namespace central --set persistentStorage.enabled=true,persistentStorage.storageClassName="portworx-sc",pxbackup.enabled=true
+
 sleep 5
 
 while true; do
