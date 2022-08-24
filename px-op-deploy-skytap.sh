@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "PX 2.10 Deployment Script Running on FA Cloud Volumes"
+echo "PX 2.11 Deployment Script Running on FA Cloud Volumes"
 sleep 1
 
 echo "Checking K8 Nodes are Ready"
